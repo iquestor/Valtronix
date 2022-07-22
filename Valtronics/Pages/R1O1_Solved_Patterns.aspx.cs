@@ -18,5 +18,10 @@ namespace Valtronics.Pages
         {
             GridView1.DataBind();
         }
+
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }

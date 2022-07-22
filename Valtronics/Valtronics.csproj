@@ -126,6 +126,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Pages\Error_History.aspx" />
     <Content Include="Pages\PalletHeader.aspx" />
     <Content Include="Pages\Pallet_Build_History.aspx" />
     <Content Include="Pages\R1O1_Solved_Patterns.aspx" />
@@ -191,6 +192,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Error_History.aspx.cs">
+      <DependentUpon>Error_History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Error_History.aspx.designer.cs">
+      <DependentUpon>Error_History.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\PalletHeader.aspx.cs">
       <DependentUpon>PalletHeader.aspx</DependentUpon>

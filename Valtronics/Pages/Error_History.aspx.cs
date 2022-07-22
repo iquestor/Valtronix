@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Valtronics.Pages
 {
-    public partial class R1O1_Trays_Not_Scanned : System.Web.UI.Page
+    public partial class Error_History : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,13 +17,6 @@ namespace Valtronics.Pages
         protected void Timer1_Tick(object sender, EventArgs e)
         {
             GridView1.DataBind();
-            GridView2.DataBind();
-            GridView3.DataBind();
-        }
-
-        protected void GridView3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

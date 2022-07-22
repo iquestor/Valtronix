@@ -187,10 +187,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/11/2014 14:26:04</publishTime>
     </File>
     <File Include="bin/Valtronics.dll">
-      <publishTime>07/11/2022 15:08:49</publishTime>
+      <publishTime>07/22/2022 13:31:29</publishTime>
     </File>
     <File Include="bin/Valtronics.pdb">
-      <publishTime>07/11/2022 15:08:49</publishTime>
+      <publishTime>07/22/2022 13:31:29</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 12:57:34</publishTime>
@@ -229,7 +229,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/30/2022 16:18:13</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>06/30/2022 16:18:13</publishTime>
+      <publishTime>07/13/2022 08:37:42</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>06/30/2022 16:18:13</publishTime>
@@ -255,6 +255,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Pages/Device_scans.aspx">
       <publishTime>07/01/2022 14:45:02</publishTime>
     </File>
+    <File Include="Pages/Error_History.aspx">
+      <publishTime>07/13/2022 08:52:57</publishTime>
+    </File>
     <File Include="Pages/PalletHeader.aspx">
       <publishTime>07/01/2022 15:05:49</publishTime>
     </File>
@@ -265,7 +268,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/01/2022 14:55:00</publishTime>
     </File>
     <File Include="Pages/R1O1_Trays_Not_Scanned.aspx">
-      <publishTime>07/01/2022 14:55:06</publishTime>
+      <publishTime>07/18/2022 14:02:14</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>06/30/2022 16:18:16</publishTime>
@@ -370,7 +373,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/30/2022 16:18:17</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/30/2022 16:25:35</publishTime>
+      <publishTime>07/22/2022 13:31:40</publishTime>
     </File>
   </ItemGroup>
 </Project>
