@@ -7,10 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace Valtronics.Pages
 {
-    public partial class Pallet_Build_History : System.Web.UI.Page
+    public partial class Transaction_Logs : System.Web.UI.Page
     {
-
-        string gSqlCmd = "Select * from PalletHeader;";
+        const string defaultSQL = "Select * From syslog; ";
+        string gSqlCmd = defaultSQL;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -62,8 +62,8 @@ namespace Valtronics.Pages
         protected void Button3_Click(object sender, EventArgs e)
         {
             // clear filter button
-            gSqlCmd = "Select * From PalletHeader;";
             txtSearchFor.Text = "";
+            setSqlCmd();
             updateGridView();
 
         }
@@ -82,9 +82,9 @@ namespace Valtronics.Pages
         protected string setSqlCmd()
         {
             if (txtSearchFor.Text.Length > 0)
-            gSqlCmd = "SELECT * FROM PalletHeader where " + DropDownList1.Text + " ='" + txtSearchFor.Text + "';";       //new query to execute
+            gSqlCmd = "SELECT * FROM SysLog where " + DropDownList1.Text + " ='" + txtSearchFor.Text + "';";       //new query to execute
 
-            else gSqlCmd = "SELECT * FROM PalletHeader";
+            else gSqlCmd = defaultSQL;
 
             return gSqlCmd;
         }

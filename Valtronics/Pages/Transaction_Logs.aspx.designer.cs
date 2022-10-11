@@ -10,7 +10,7 @@
 namespace Valtronics.Pages {
     
     
-    public partial class Pallet_Build_History {
+    public partial class Transaction_Logs {
         
         /// <summary>
         /// form1 control.

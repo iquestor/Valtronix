@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pallet_Build_History.aspx.cs" Inherits="Valtronics.Pages.Pallet_Build_History" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Transaction_Logs.aspx.cs" Inherits="Valtronics.Pages.Transaction_Logs" %>
 
 <!DOCTYPE html>
 
@@ -9,6 +9,9 @@
         .auto-style1 {
             width: 100%;
             background-color: #008080;
+        }
+        .auto-style2 {
+            margin-right: 1756px;
         }
     </style>
 </head>
@@ -33,9 +36,7 @@
                     <td>
                         <asp:Label ID="Label2" runat="server" Font-Names="Microsoft Sans Serif" Font-Size="Small" ForeColor="White" Text="In:   "></asp:Label>
                         <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="35px">
-                            <asp:ListItem>Station</asp:ListItem>
-                            <asp:ListItem Value="SlaveID">Slave Board ID</asp:ListItem>
-                            <asp:ListItem Value="PalletID">Pallet ID</asp:ListItem>
+                            <asp:ListItem>Carton_ID</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td>
@@ -49,25 +50,17 @@
             <br />
             <br />
         </div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="PalletID" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="None" ShowHeaderWhenEmpty="True" Font-Size="Small"  AllowPaging="True" PageSize="250">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="None" ShowHeaderWhenEmpty="True" Font-Size="Small"  AllowPaging="True" PageSize="50" CssClass="auto-style2" DataKeyNames="id" Width="1024px">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
-                <asp:BoundField DataField="Station" HeaderText="Station" SortExpression="Station" />
-                <asp:BoundField DataField="PalletID" HeaderText="PalletID" ReadOnly="True" SortExpression="PalletID" />
-                <asp:BoundField DataField="Canadian" HeaderText="Canadian" SortExpression="Canadian" />
-                <asp:BoundField DataField="OuterWrap" HeaderText="OuterWrap" SortExpression="OuterWrap" />
-                <asp:BoundField DataField="TopCap" HeaderText="TopCap" SortExpression="TopCap" />
-                <asp:BoundField DataField="Strap" HeaderText="Strap" SortExpression="Strap" />
-                <asp:BoundField DataField="Placard" HeaderText="Placard" SortExpression="Placard" />
-                <asp:BoundField DataField="CGroup" HeaderText="CGroup" SortExpression="CGroup" />
-                <asp:BoundField DataField="OrderCount" HeaderText="OrderCount" SortExpression="OrderCount" />
-                <asp:BoundField DataField="SlaveID" HeaderText="SlaveID" SortExpression="SlaveID" />
-                <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
-                <asp:BoundField DataField="FullTrayCount" HeaderText="FullTrayCount" SortExpression="FullTrayCount" />
-                <asp:BoundField DataField="HalfTrayCount" HeaderText="HalfTrayCount" SortExpression="HalfTrayCount" />
+                <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" ReadOnly="True" InsertVisible="False" />
+                <asp:BoundField DataField="category" HeaderText="category" SortExpression="category" />
+                <asp:BoundField DataField="date_stamp" HeaderText="date_stamp" SortExpression="date_stamp" />
+                <asp:BoundField DataField="time_stamp" HeaderText="time_stamp" SortExpression="time_stamp" />
+                <asp:BoundField DataField="message" HeaderText="message" SortExpression="message" />
+                <asp:BoundField DataField="source" HeaderText="source" SortExpression="source" />
+                <asp:BoundField DataField="carton_id" HeaderText="carton_id" SortExpression="carton_id" />
                 <asp:BoundField DataField="DT" HeaderText="DT" SortExpression="DT" />
-                <asp:BoundField DataField="ManLabel" HeaderText="ManLabel" SortExpression="ManLabel" />
-                <asp:BoundField DataField="Sequence" HeaderText="Sequence" SortExpression="Sequence" />
             </Columns>
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -80,7 +73,7 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="SELECT * FROM [palletheader]" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select * From syslog" ></asp:SqlDataSource>
         <asp:Timer ID="Timer1" runat="server" Interval="5000" OnTick="Timer1_Tick" Enabled="False">
         </asp:Timer>
         <asp:ScriptManager ID="ScriptManager1" runat="server">
