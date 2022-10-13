@@ -128,6 +128,7 @@
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Pages\Error_History.aspx" />
     <Content Include="Pages\PalletHeader.aspx" />
+    <Content Include="Pages\Pallet_Build.aspx" />
     <Content Include="Pages\Pallet_Build_Rules.aspx" />
     <Content Include="Pages\Transaction_Logs.aspx" />
     <Content Include="Pages\Pallet_Build_History.aspx" />
@@ -208,6 +209,13 @@
     </Compile>
     <Compile Include="Pages\PalletHeader.aspx.designer.cs">
       <DependentUpon>PalletHeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Pallet_Build.aspx.cs">
+      <DependentUpon>Pallet_Build.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Pallet_Build.aspx.designer.cs">
+      <DependentUpon>Pallet_Build.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Pallet_Build_Rules.aspx.cs">
       <DependentUpon>Pallet_Build_Rules.aspx</DependentUpon>

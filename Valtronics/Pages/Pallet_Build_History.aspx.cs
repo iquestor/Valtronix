@@ -88,5 +88,10 @@ namespace Valtronics.Pages
 
             return gSqlCmd;
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
