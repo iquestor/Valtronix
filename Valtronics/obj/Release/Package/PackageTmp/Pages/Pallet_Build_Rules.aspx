@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" ShowHeaderWhenEmpty="True" Font-Size="Small" PageSize="50" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="Index_Auto">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" ShowHeaderWhenEmpty="True" Font-Size="Small" PageSize="50" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="Index_Auto" OnDataBound="GridView1_DataBound" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" Width="725px">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowEditButton="True" />
@@ -19,7 +19,11 @@
                 <asp:CheckBoxField DataField="USenable" HeaderText="US Enable" SortExpression="USenable" />
                 <asp:CheckBoxField DataField="CANenable" HeaderText="CAN Enable" SortExpression="CANenable" />
                 <asp:CheckBoxField DataField="AUDenable" HeaderText="AUD Enable" SortExpression="AUDenable" />
-                <asp:ButtonField ButtonType="Button" CommandName="Update" Text="Set" />
+                <asp:TemplateField HeaderText="Set">
+                    <ItemTemplate>
+                        <asp:Button ID="Button1" runat="server" CausesValidation="false" CommandName="Update" Text="Set" />
+                    </ItemTemplate>
+                </asp:TemplateField>
             </Columns>
             <EditRowStyle BackColor="#7C6F57" />
             <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />

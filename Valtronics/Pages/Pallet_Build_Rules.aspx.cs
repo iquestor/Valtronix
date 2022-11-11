@@ -28,5 +28,31 @@ namespace Valtronics.Pages
         {
             GridView1.DataBind();
         }
+
+        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            
+            GridView1.EditIndex = e.NewEditIndex;
+            DataBind();
+            int c = GridView1.Rows[e.NewEditIndex].Cells.Count - 1;
+            Button setButton = (Button) GridView1.Rows[e.NewEditIndex].Cells[c].FindControl("Button1");
+            // doesn't work!!
+            setButton.Visible = true;
+        }
+
+        protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+           
+        }
+
+        protected void GridView1_DataBound(object sender, EventArgs e)
+        {
+
+            foreach (GridViewRow gvrow in GridView1.Rows)
+            {
+                Button setButton = (Button)gvrow.Cells[7].FindControl("Button1");
+                
+            }
+        }
     }
 }

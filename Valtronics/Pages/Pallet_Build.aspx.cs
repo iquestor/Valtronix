@@ -15,11 +15,15 @@ namespace Valtronix.Pages
         }
 
         protected void Timer1_Tick(object sender, EventArgs e)
-        {
-            viewStation1.DataBind();
+        {   viewStation1.DataBind();
             viewStation2.DataBind();
             viewStation3.DataBind();
             viewStation4.DataBind();
+        }
+
+        protected void viewStation13_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

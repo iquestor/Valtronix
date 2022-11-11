@@ -6,254 +6,234 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
+        .auto-style38 {
+            width: 1360px;
         }
-        .auto-style2 {
-            height: 55px;
-            background-color: #009999;
+        .auto-style43 {
+            height: 65px;
         }
-        .auto-style4 {
-            text-align: center;
-            text-decoration: underline;
+        .auto-style44 {
+            height: 64px;
+        }
+        .auto-style52 {
+            height: 65px;
             color: #FFFFFF;
-            background-color: #009999;
+            font-size: x-large;
+            width: 339px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0000FF;
         }
-        .auto-style5 {
-            height: 57px;
-        }
-        .auto-style7 {
-            height: 58px;
-            text-align: center;
-        }
-        .auto-style8 {
-            text-decoration: underline;
-        }
-        .auto-style9 {
-            text-align: center;
-            text-decoration: underline;
+        .auto-style53 {
+            height: 65px;
             color: #FFFFFF;
+            font-size: x-large;
+            width: 340px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0000FF;
         }
-        .auto-style10 {
-            height: 218px;
+        .auto-style54 {
+            width: 339px;
         }
-        .auto-style11 {
-            text-decoration: underline;
-            color: #FFFFFF;
-            background-color: #009999;
+        .auto-style55 {
+            width: 340px;
         }
-        .auto-style12 {
-            height: 46px;
-            background-color: #009999;
+        .auto-style59 {
+            width: 339px;
+            height: 20px;
         }
-        .auto-style13 {
-            color: #FFFFFF;
-            text-align: center;
+        .auto-style60 {
+            width: 340px;
+            height: 20px;
         }
-        .auto-style14 {
-            text-align: center;
+        .auto-style61 {
+            width: 339px;
+            height: 21px;
+        }
+        .auto-style62 {
+            width: 340px;
+            height: 21px;
+        }
+        .auto-style63 {
+            width: 339px;
+            height: 178px;
+        }
+        .auto-style64 {
+            width: 340px;
+            height: 178px;
+        }
+        .auto-style65 {
+            font-size: x-large;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style66 {
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style8">
-                        <h2 class="auto-style8">Robot 1 Outfeed 1</h2>
-                    </td>
-                    <td>
-                        <h2 class="auto-style8">Robot 1 Outfeed 2</h2>
-                    </td>
-                    <td>
-                        <h2 class="auto-style8">Robot 2 Outfeed 1</h2>
-                    </td>
-                    <td>
-                        <h2 class="auto-style8">Robot 2 Outfeed 2</h2>
-                    </td>
+            <br />
+            <table class="auto-style38">
+                <tr bgcolor="#507486">
+                    <td align="Center" class="auto-style52">Robot 1 Outfeed 1</td>
+                    <td align="Center" class="auto-style52">Robot 1 Outfeed 2</td>
+                    <td align="Center" class="auto-style53">Robot 2 Outfeed 1</td>
+                    <td align="Center" class="auto-style53">Robot 2 Outfeed 2</td>
+                </tr>
+                <tr bgcolor="#507486">
+                    <td align="Center" colspan="4" class="auto-style43"><H2 class="auto-style65"><font color="White">Current Order Number</H2></font></td>
                 </tr>
                 <tr>
-                    <td class="auto-style2" colspan="4">
-                        <h3 class="auto-style9">Current Order Number</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style10">
-                        <asp:GridView ID="viewStation1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style63">
+                        <asp:GridView ID="viewStation1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" Width="119px" HorizontalAlign="Center" Font-Size="Large" CssClass="auto-style66">
                             <Columns>
                                 <asp:BoundField DataField="PalletID" HeaderText="PalletID" SortExpression="PalletID" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" Font-Bold="False" Font-Names="Arial" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select palletid as PalletID from current_pallet where station_num = 1" ></asp:SqlDataSource>
                     </td>
-                    <td class="auto-style10">
-                        <asp:GridView ID="viewStation2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style63">
+                        <asp:GridView ID="viewStation2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" Width="118px" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
                             <Columns>
                                 <asp:BoundField DataField="PalletID" HeaderText="PalletID" SortExpression="PalletID" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" Font-Names="Arial" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select palletid as PalletID from current_pallet where station_num = 2" ></asp:SqlDataSource>
                     </td>
-                    <td class="auto-style10">
-                        <asp:GridView ID="viewStation3" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource3" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style64">
+                        <asp:GridView ID="viewStation3" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource3" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" Width="113px" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
                             <Columns>
                                 <asp:BoundField DataField="PalletID" HeaderText="PalletID" SortExpression="PalletID" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" Font-Names="Arial" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select palletid as PalletID from current_pallet where station_num = 3" ></asp:SqlDataSource>
                     </td>
-                    <td class="auto-style10">
-                        <asp:GridView ID="viewStation4" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource4" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style64">
+                        <asp:GridView ID="viewStation4" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource4" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" Width="112px" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
                             <Columns>
                                 <asp:BoundField DataField="PalletID" HeaderText="PalletID" SortExpression="PalletID" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" Font-Names="Arial" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select palletid as PalletID from current_pallet where station_num = 4" ></asp:SqlDataSource>
                     </td>
                 </tr>
-                <tr>
-                    <td class="auto-style5" colspan="4">
-                        <h3 class="auto-style4">Trays Not Scanned</h3>
-                    </td>
+                <tr bgcolor="#507486">
+                    <td align="Center" class="auto-style44" colspan="4"><H2 class="auto-style65"><font color="White">Trays Unscanned</H2></font></td>
                 </tr>
                 <tr>
-                    <td>
-                        <asp:GridView ID="viewStation5" runat="server" AutoGenerateColumns="False" DataKeyNames="MailTrayID" DataSourceID="SqlDataSource5" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style54">
+                        <asp:GridView ID="viewStation5" runat="server" AutoGenerateColumns="False" DataKeyNames="MailTrayID" DataSourceID="SqlDataSource5" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
+                            <AlternatingRowStyle ForeColor="#0066FF" />
                             <Columns>
                                 <asp:BoundField DataField="MailTrayID" HeaderText="MailTrayID" ReadOnly="True" SortExpression="MailTrayID" />
                                 <asp:BoundField DataField="Half" HeaderText="Half" SortExpression="Half" />
                                 <asp:BoundField DataField="Seq" HeaderText="Seq" SortExpression="Seq" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select mailtrayid as MailTrayID, half as Half, Sequence as Seq from tray where palletid = (select palletid from current_pallet where station_num = 1) and scanned = 0;" ></asp:SqlDataSource>
                     </td>
-                    <td>
-                        <asp:GridView ID="viewStation6" runat="server" AutoGenerateColumns="False" DataKeyNames="MailTrayID" DataSourceID="SqlDataSource6" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style54">
+                        <asp:GridView ID="viewStation6" runat="server" AutoGenerateColumns="False" DataKeyNames="MailTrayID" DataSourceID="SqlDataSource6" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" Width="358px" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
+                            <AlternatingRowStyle ForeColor="#0066FF" />
                             <Columns>
                                 <asp:BoundField DataField="MailTrayID" HeaderText="MailTrayID" ReadOnly="True" SortExpression="MailTrayID" />
                                 <asp:BoundField DataField="Half" HeaderText="Half" SortExpression="Half" />
                                 <asp:BoundField DataField="Seq" HeaderText="Seq" SortExpression="Seq" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select mailtrayid as MailTrayID, half as Half, Sequence as Seq from tray where palletid = (select palletid from current_pallet where station_num = 2) and scanned = 0;" ></asp:SqlDataSource>
                     </td>
-                    <td>
-                        <asp:GridView ID="viewStation7" runat="server" AutoGenerateColumns="False" DataKeyNames="MailTrayID" DataSourceID="SqlDataSource7" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style55">
+                        <asp:GridView ID="viewStation7" runat="server" AutoGenerateColumns="False" DataKeyNames="MailTrayID" DataSourceID="SqlDataSource7" Height="18px" PageSize="1" ShowHeaderWhenEmpty="True" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
+                            <AlternatingRowStyle ForeColor="#0066FF" />
                             <Columns>
                                 <asp:BoundField DataField="MailTrayID" HeaderText="MailTrayID" ReadOnly="True" SortExpression="MailTrayID" />
                                 <asp:BoundField DataField="Half" HeaderText="Half" SortExpression="Half" />
                                 <asp:BoundField DataField="Seq" HeaderText="Seq" SortExpression="Seq" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select mailtrayid as MailTrayID, half as Half, Sequence as Seq from tray where palletid = (select palletid from current_pallet where station_num = 3) and scanned = 0;" ></asp:SqlDataSource>
                     </td>
-                    <td>
-                        <asp:GridView ID="viewStation8" runat="server" AutoGenerateColumns="False" DataKeyNames="MailTrayID" DataSourceID="SqlDataSource8" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style55">
+                        <asp:GridView ID="viewStation8" runat="server" AutoGenerateColumns="False" DataKeyNames="MailTrayID" DataSourceID="SqlDataSource8" Height="21px" PageSize="1" ShowHeaderWhenEmpty="True" Width="196px" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
+                            <AlternatingRowStyle ForeColor="#0066FF" />
                             <Columns>
                                 <asp:BoundField DataField="MailTrayID" HeaderText="MailTrayID" ReadOnly="True" SortExpression="MailTrayID" />
                                 <asp:BoundField DataField="Half" HeaderText="Half" SortExpression="Half" />
                                 <asp:BoundField DataField="Seq" HeaderText="Seq" SortExpression="Seq" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource8" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select mailtrayid as MailTrayID, half as Half, Sequence as Seq from tray where palletid = (select palletid from current_pallet where station_num = 4) and scanned = 0;" ></asp:SqlDataSource>
                     </td>
                 </tr>
-                <tr>
-                    <td class="auto-style7" colspan="4">
-                        <h3 class="auto-style11">Solved patterns</h3>
-                    </td>
+                <tr bgcolor="#507486">
+                    <td align="Center" class="auto-style43" colspan="4"><H2 class="auto-style65"><font color="White">Solved Patterns</font></H2></td>
                 </tr>
                 <tr>
-                    <td>
-                        <asp:GridView ID="viewStation9" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource9" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style54">
+                        <asp:GridView ID="viewStation9" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource9" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
+                            <AlternatingRowStyle ForeColor="#0066FF" />
                             <Columns>
                                 <asp:BoundField DataField="Layer_Number" HeaderText="Layer_Number" SortExpression="Layer_Number" />
                                 <asp:BoundField DataField="Mirrored" HeaderText="Mirrored" SortExpression="Mirrored" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource9" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select fanuc_num as Layer_Number, fanuc_num_m as Mirrored from solved_patterns where palletid = (select palletid from current_pallet where station_num = 1)" ></asp:SqlDataSource>
                     </td>
-                    <td>
-                        <asp:GridView ID="viewStation10" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource10" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style54">
+                        <asp:GridView ID="viewStation10" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource10" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
+                            <AlternatingRowStyle ForeColor="#0066FF" />
                             <Columns>
                                 <asp:BoundField DataField="Layer_Number" HeaderText="Layer_Number" SortExpression="Layer_Number" />
                                 <asp:BoundField DataField="Mirrored" HeaderText="Mirrored" SortExpression="Mirrored" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource10" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select fanuc_num as Layer_Number, fanuc_num_m as Mirrored from solved_patterns where palletid = (select palletid from current_pallet where station_num = 2)" ></asp:SqlDataSource>
                     </td>
-                    <td>
-                        <asp:GridView ID="viewStation11" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource11" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style55">
+                        <asp:GridView ID="viewStation11" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource11" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
+                            <AlternatingRowStyle ForeColor="#0066FF" />
                             <Columns>
                                 <asp:BoundField DataField="Layer_Number" HeaderText="Layer_Number" SortExpression="Layer_Number" />
                                 <asp:BoundField DataField="Mirrored" HeaderText="Mirrored" SortExpression="Mirrored" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select fanuc_num as Layer_Number, fanuc_num_m as Mirrored from solved_patterns where palletid = (select palletid from current_pallet where station_num = 3)" ></asp:SqlDataSource>
                     </td>
-                    <td>
-                        <asp:GridView ID="viewStation12" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource12" Height="91px" PageSize="1">
+                    <td valign="Top" class="auto-style55">
+                        <asp:GridView ID="viewStation12" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource12" Height="16px" PageSize="1" ShowHeaderWhenEmpty="True" HorizontalAlign="Center" CssClass="auto-style66" Font-Size="Large">
+                            <AlternatingRowStyle ForeColor="#0066FF" />
                             <Columns>
                                 <asp:BoundField DataField="Layer_Number" HeaderText="Layer_Number" SortExpression="Layer_Number" />
                                 <asp:BoundField DataField="Mirrored" HeaderText="Mirrored" SortExpression="Mirrored" />
                             </Columns>
-                            <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
+                            <HeaderStyle BackColor="#F0F0F0" Font-Size="Medium" />
                         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource12" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select fanuc_num as Layer_Number, fanuc_num_m as Mirrored from solved_patterns where palletid = (select palletid from current_pallet where station_num = 4)" ></asp:SqlDataSource>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style12" colspan="4">
-                        <h3 class="auto-style13">Pallet header Information, All Stations</h3>
-                        <p class="auto-style13">
-                            Status Codes: 0 - Not Processed; 1 - Ready For Build; 2 - Actively Sleeving; 3 - Pallet received Complete; 69 - Not Buildable / Data Error</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="4">
-                        <div class="auto-style14">
-                            <asp:GridView ID="viewStation13" runat="server" AutoGenerateColumns="False" DataKeyNames="Pallet_ID" DataSourceID="SqlDataSource13" Height="91px" PageSize="1" Width="2179px">
-                                <Columns>
-                                    <asp:BoundField DataField="DT" HeaderText="DT" SortExpression="DT" />
-                                    <asp:BoundField DataField="Station" HeaderText="Station" SortExpression="Station" />
-                                    <asp:BoundField DataField="Pallet_ID" HeaderText="Pallet_ID" ReadOnly="True" SortExpression="Pallet_ID" />
-                                    <asp:BoundField DataField="Canadian" HeaderText="Canadian" SortExpression="Canadian" />
-                                    <asp:BoundField DataField="Outer_Wrap" HeaderText="Outer_Wrap" SortExpression="Outer_Wrap" />
-                                    <asp:BoundField DataField="Top_Cap" HeaderText="Top_Cap" SortExpression="Top_Cap" />
-                                    <asp:BoundField DataField="Strap" HeaderText="Strap" SortExpression="Strap" />
-                                    <asp:BoundField DataField="Placard" HeaderText="Placard" SortExpression="Placard" />
-                                    <asp:BoundField DataField="Canadian_Group" HeaderText="Canadian_Group" SortExpression="Canadian_Group" />
-                                    <asp:BoundField DataField="Order_Count" HeaderText="Order_Count" SortExpression="Order_Count" />
-                                    <asp:BoundField DataField="Multi_Sequence" HeaderText="Multi_Sequence" SortExpression="Multi_Sequence" />
-                                    <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
-                                    <asp:BoundField DataField="Full_Tray_Count" HeaderText="Full_Tray_Count" SortExpression="Full_Tray_Count" />
-                                    <asp:BoundField DataField="Half_Tray_Count" HeaderText="Half_Tray_Count" SortExpression="Half_Tray_Count" />
-                                </Columns>
-                                <HeaderStyle BackColor="#999999" Font-Size="X-Small" />
-                            </asp:GridView>
-                        </div>
-        <asp:SqlDataSource ID="SqlDataSource13" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select DT, station as Station, palletid as Pallet_ID, canadian as Canadian, outerwrap as Outer_Wrap, topcap as Top_Cap, strap as Strap, 
-placard as Placard, cgroup as Canadian_Group, ordercount as Order_Count, sequence as Multi_Sequence, status as Status, fulltraycount as Full_Tray_Count, halftraycount as Half_Tray_Count from palletheader" ></asp:SqlDataSource>
                     </td>
                 </tr>
             </table>
             <br />
+            <br />
+            <br />
+            <br />
         <asp:Timer ID="Timer1" runat="server" Interval="5000" OnTick="Timer1_Tick" Enabled="False">
         </asp:Timer>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="SELECT PalletID FROM current_pallet WHERE (Station_Num = 1)" ></asp:SqlDataSource>
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
+        <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select mailtrayid as MailTrayID, half as Half, Sequence as Seq from tray where palletid = (select palletid from current_pallet where station_num = 1) and scanned = 0;" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select mailtrayid as MailTrayID, half as Half, Sequence as Seq from tray where palletid = (select palletid from current_pallet where station_num = 2) and scanned = 0;" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select mailtrayid as MailTrayID, half as Half, Sequence as Seq from tray where palletid = (select palletid from current_pallet where station_num = 3) and scanned = 0;" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource8" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select mailtrayid as MailTrayID, half as Half, Sequence as Seq from tray where palletid = (select palletid from current_pallet where station_num = 4) and scanned = 0;" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource9" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select fanuc_num as Layer_Number, fanuc_num_m as Mirrored from solved_patterns where palletid = (select palletid from current_pallet where station_num = 1)" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource10" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select fanuc_num as Layer_Number, fanuc_num_m as Mirrored from solved_patterns where palletid = (select palletid from current_pallet where station_num = 2)" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select palletid as PalletID from current_pallet where station_num = 4" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select fanuc_num as Layer_Number, fanuc_num_m as Mirrored from solved_patterns where palletid = (select palletid from current_pallet where station_num = 3)" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select palletid as PalletID from current_pallet where station_num = 2" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select palletid as PalletID from current_pallet where station_num = 3" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource12" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="Select fanuc_num as Layer_Number, fanuc_num_m as Mirrored from solved_patterns where palletid = (select palletid from current_pallet where station_num = 4)" ></asp:SqlDataSource>
         </div>
     </form>
 </body>

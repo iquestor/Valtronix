@@ -64,8 +64,7 @@ C:\Users\Admin\source\repos\Valtronics\Valtronics\bin\Newtonsoft.Json.xml
 C:\Users\Admin\source\repos\Valtronics\Valtronics\bin\Antlr3.Runtime.pdb
 C:\Users\Admin\source\repos\Valtronics\Valtronics\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Admin\source\repos\Valtronics\Valtronics\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Release\Valtronix.csproj.CoreCompileInputs.cache
-C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Release\Valtronix.csproj.CopyComplete
-C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Release\Valtronix.dll
-C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Release\Valtronix.pdb
-C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Release\Valtronix.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Debug\Valtronix.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Debug\Valtronix.csproj.CopyComplete
+C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Debug\Valtronix.dll
+C:\Users\Admin\source\repos\Valtronics\Valtronics\obj\Debug\Valtronix.pdb
