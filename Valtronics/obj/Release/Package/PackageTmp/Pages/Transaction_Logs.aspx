@@ -50,7 +50,7 @@
             <br />
             <br />
         </div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="None" ShowHeaderWhenEmpty="True" Font-Size="Small"  AllowPaging="True" PageSize="50" CssClass="auto-style2" DataKeyNames="id" Width="1024px">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="None" ShowHeaderWhenEmpty="True" Font-Size="Small"  AllowPaging="True" PageSize="50" CssClass="auto-style2" DataKeyNames="id" Width="1024px" Font-Names="Arial">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" ReadOnly="True" InsertVisible="False" />
@@ -73,7 +73,7 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="SELECT * FROM [syslog]" OnSelecting="SqlDataSource1_Selecting" ></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ctmConnectionString %>" SelectCommand="SELECT * FROM [syslog] ORDER BY [DT] DESC" OnSelecting="SqlDataSource1_Selecting" ></asp:SqlDataSource>
         <asp:Timer ID="Timer1" runat="server" Interval="5000" OnTick="Timer1_Tick" Enabled="False">
         </asp:Timer>
         <asp:ScriptManager ID="ScriptManager1" runat="server">

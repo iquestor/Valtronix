@@ -18,5 +18,20 @@ namespace Valtronics.Pages
         {
             GridView1.DataBind();
         }
+
+        protected void CheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CheckBox2.Checked == true)
+            {
+                Timer1.Enabled = true;
+                CheckBox2.ForeColor = System.Drawing.Color.Red;
+            }
+
+            else
+            {
+                Timer1.Enabled = false;
+                CheckBox2.ForeColor = System.Drawing.Color.Black;
+            }
+        }
     }
 }

@@ -132,8 +132,6 @@
     <Content Include="Pages\Pallet_Build_Rules.aspx" />
     <Content Include="Pages\Transaction_Logs.aspx" />
     <Content Include="Pages\Pallet_Build_History.aspx" />
-    <Content Include="Pages\R1O1_Solved_Patterns.aspx" />
-    <Content Include="Pages\R1O1_Trays_Not_Scanned.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -237,20 +235,6 @@
     </Compile>
     <Compile Include="Pages\Pallet_Build_History.aspx.designer.cs">
       <DependentUpon>Pallet_Build_History.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\R1O1_Solved_Patterns.aspx.cs">
-      <DependentUpon>R1O1_Solved_Patterns.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\R1O1_Solved_Patterns.aspx.designer.cs">
-      <DependentUpon>R1O1_Solved_Patterns.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\R1O1_Trays_Not_Scanned.aspx.cs">
-      <DependentUpon>R1O1_Trays_Not_Scanned.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\R1O1_Trays_Not_Scanned.aspx.designer.cs">
-      <DependentUpon>R1O1_Trays_Not_Scanned.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
