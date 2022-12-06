@@ -58,6 +58,42 @@ namespace Valtronix.Pages {
         protected global::System.Web.UI.WebControls.GridView viewStation4;
         
         /// <summary>
+        /// lblR1O1_Unscanned control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblR1O1_Unscanned;
+        
+        /// <summary>
+        /// lblR1O2_Unscanned control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblR1O2_Unscanned;
+        
+        /// <summary>
+        /// lblR2O1_Unscanned control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblR2O1_Unscanned;
+        
+        /// <summary>
+        /// lblR2O2_Unscanned control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblR2O2_Unscanned;
+        
+        /// <summary>
         /// viewStation5 control.
         /// </summary>
         /// <remarks>
